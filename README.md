@@ -106,12 +106,8 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 
 ````
-
-###Chrome
-yep.
-
 ###Firefox
-uh huh.
+* Get the [developer edition!](https://www.mozilla.org/en-US/firefox/developer/)
 
 
 ###Sublime Text 3:
