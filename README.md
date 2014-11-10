@@ -1,14 +1,14 @@
 #Setting up a good development environment on a Mac
 
 
-#Step One
+###Install OSX Yosemite
 * Pop in your bootable OSX Yosemite USB stick.
-* Wipe your harddrive by starting OSX while holding down option, go to Utilities > Disk Utility and format your hard disk in Mac OSX (Journaled) format.
+* Wipe your hard drive by powering on your Mac while holding down the Option key, select the OSX USB drive, go to Utilities > Disk Utility, and format your hard disk in Mac OSX (Journaled) format.
 * Don't sign in with your Apple ID right away.
 
 
 ###Xcode:
-* Download Xcode from the App store. It will take a while so do this first.
+* Download Xcode from the App Store. It will take a while so do this first.
 * Install all updates for your OS etc.
 * Get Xcode's command line tools to get GCC, git and other goodies.
 * Once it downloads do ````xcode-select --install```` to get the command line tools.
@@ -28,13 +28,13 @@ Apple is just going to send your data to fucking Microsoft of all places if you 
 * Follow the instructions at [Fix Mac OSX](https://fix-macosx.com) You can even do this automatically by running a Python script, but we aren't ready for that yet.
 
 ### Get Rid of Apple's stupid shit programs
-In a Terminal window, hit 
+In a Terminal window, enter: 
 
 ````sudo chflags hidden /Applications/Bullshit.app````
 
-replacing "Bullshit" with Maps for example.
+(Replace "Bullshit" with Maps, for example.)
  
-This will hide Apple's perplexingly awful default programs that are inavisable to delete straight away.
+This will hide Apple's perplexingly awful default programs that are inadvisable to delete outright.
 
 I also deleted the stock alerts in the notifications panel.
 
@@ -52,7 +52,7 @@ brew doctor
 brew update
 ````
 ### Rbenv, Ruby, and Rails
-Much of this follows some of the instructions on [GoRails](https://gorails.com/setup/osx/10.10-yosemite)
+Much of this follows some of the instructions on [GoRails](https://gorails.com/setup/osx/10.10-yosemite).
 
 ````
 brew install rbenv ruby-build
@@ -85,7 +85,7 @@ git config --global user.email "flast@yo.com"
 Set up 2-factor authentication on github.
 
 ###Generate SSH keys:
-* Instructions:
+* In Terminal:
 
 ````
 cd ~/.ssh
@@ -93,7 +93,7 @@ ssh-keygen -t rsa -C "you@yo.com"
 #don't enter a passphrase
 pbcopy < ~/.ssh/id_rsa.pub
 ````
-* Paste the resulting RSA key to [Github](https://github.com/settings/ssh).
+* Paste the entire resulting RSA key to [Github](https://github.com/settings/ssh).
 
 ````ssh -T git@github.com```` checks that this actually worked.
 
