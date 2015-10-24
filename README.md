@@ -151,6 +151,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 * [Download](http://www.iterm2.com/#/section/home)
 * I highly recommend a [heads-up terminal](http://totalterminal.binaryage.com/) for running servers and some color schemes such as [solarized](http://iterm2colorschemes.com/)
 * On iTerm, turn off the annoying beep: Preferences>Profiles>Tab:Terminal>Notifications>Silence Bell
+* Also nice to enable [option + arrow key navigation](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
 
 
 ###Chrome:
