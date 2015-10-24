@@ -1,16 +1,16 @@
 #Setting up a good development environment on a Mac
 
-## Important: If you are doing this with El Capitain, you need another step: 
+###Install OSX
+* Always best to clean install and transfer documents and stuff later imho.
+* Pop in your bootable OSX USB stick.
+* Wipe your hard drive by powering on your Mac while holding down the Option key, select the OSX USB drive, go to Utilities > Disk Utility, and format your hard disk in Mac OSX (Journaled) format.
+* Don't sign in with your Apple ID right away.
+
+### Important: If you are doing this with El Capitain, you need another step: 
 * Restart your laptop and hold cmd+r
 * Go to Utilities > Terminal
 * Execute `csrutil disble`
 * Now you can go into hardhat mode on your computer. Without this, anything relating to `root` will be impossible. 
-
-
-###Install OSX Yosemite
-* Pop in your bootable OSX Yosemite USB stick.
-* Wipe your hard drive by powering on your Mac while holding down the Option key, select the OSX USB drive, go to Utilities > Disk Utility, and format your hard disk in Mac OSX (Journaled) format.
-* Don't sign in with your Apple ID right away.
 
 
 ###Xcode:
@@ -181,7 +181,7 @@ brew install mongodb
 
 ###Dotfiles:
 * I make my modifications in a fork of the [thoughtbot dot](https://github.com/thoughtbot/dotfiles) in [this repo](https://github.com/trivett/dotfiles)
-* After that, I like to install [oh-my-zsh] for no reason other than the nice themes so I don't have to edit my bash or zsh profiles too much. For some reason I like to change the colors of things, idk
+* After that, I like to install [oh-my-zsh] for no reason other than the nice themes so I don't have to edit my bash or zsh profiles too much. For some reason I like to change the colors of my terminal and stuff when I'm procrastinating.
 
 ###Other Apps:
 * Dash
