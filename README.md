@@ -1,5 +1,11 @@
 #Setting up a good development environment on a Mac
 
+## Important: If you are doing this with El Capitain, you need another step: 
+* Restart your laptop and hold cmd+r
+* Go to Utilities > Terminal
+* Execute `csrutil disble`
+* Now you can go into hardhat mode on your computer. Without this, anything relating to `root` will be impossible. 
+
 
 ###Install OSX Yosemite
 * Pop in your bootable OSX Yosemite USB stick.
@@ -14,7 +20,6 @@
 * Once it downloads do ````xcode-select --install```` to get the command line tools.
 
 
-
 ###System preferences:
 While Xcode takes forever to download
 
@@ -22,9 +27,10 @@ While Xcode takes forever to download
 * *Mission Control*: Set up hot corners for mission control and show desktop.
 * *Displays*: Arrangement-> uncheck mirror displays, arrange second monitor to your liking. 
 * *Trackpad*: Tap to click, X scroll direction, X swipe between pages 
+* *Keyboard*: Max speed Key Repeat and shortest Delay Until Repeat so you don't have to wait ages to move your cursor in the terminal. Under the Text tab here you can add keyboard shortcuts like  `¯\_(ツ)_/¯` which come in handy, amirite?
 
 ###Fix (some) Privacy Intrusions
-Apple is just going to send your data to fucking Microsoft of all places if you don't do this.
+Apple is just going to send your data to Microsoft of all places if you don't do this.
 * Follow the instructions at [Fix Mac OSX](https://fix-macosx.com) You can even do this automatically by running a Python script, but we aren't ready for that yet.
 
 ### Get Rid of Apple's stupid shit programs
@@ -64,9 +70,9 @@ source ~/.bash_profile
 ````
 
 ````
-rbenv install 2.1.3
-rbenv global 2.1.3
-gem install rails
+rbenv install 2.2.3
+rbenv global 2.2.3
+gem install rails # you might have to chown or adjust path so you don't have to install gems as root
 rbenv rehash
 ````
 
@@ -114,6 +120,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 * [Download](http://www.sublimetext.com/)
 * [Package control](https://sublime.wbond.net/installation)
 * Emmet
+* Colorsublime
 * Sublime Linter
 * Set up subl command line shortcut: 
 
@@ -137,20 +144,24 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 	"line_padding_top": 1,
 	"word_wrap": true,
 	"font_face": "AnonymousPro",
-	"font_size": 18
+	"font_size": 13
 }
 ````
 ###iTerm2:
 * [Download](http://www.iterm2.com/#/section/home)
-* I highly recommend a [heads-up terminal](http://ivanvillareal.com/osx/setup-iterm2-to-behave-like-guake/) for running servers and some color schemes such as [solarized](http://iterm2colorschemes.com/)
+* I highly recommend a [heads-up terminal](http://totalterminal.binaryage.com/) for running servers and some color schemes such as [solarized](http://iterm2colorschemes.com/)
+* On iTerm, turn off the annoying beep: Preferences>Profiles>Tab:Terminal>Notifications>Silence Bell
+
 
 ###Chrome:
 Set up gmail, drive, and 2-factor authentication
 Suggested Extensions:
 
-*JSONView
-*Pesticide
-*Live Reload
+* JSONView
+* Pesticide
+* Ghostery
+* Rails Panel
+* Postman Rest Client
 
 ###Python, pip and virtualenv
 
@@ -168,17 +179,14 @@ brew install mongodb
 * To start mongodb server, run ```` mongod ```` 
 * For a shell, just type ```` mongo ```` 
 
-###Vim
-* get yourself a nice vim distro like spf13 
-
-````curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh)````
-
+###Dotfiles:
+* I make my modifications in a fork of the [thoughtbot dot](https://github.com/thoughtbot/dotfiles) in [this repo](https://github.com/trivett/dotfiles)
+* After that, I like to install [oh-my-zsh] for no reason other than the nice themes so I don't have to edit my bash or zsh profiles too much. For some reason I like to change the colors of things, idk
 
 ###Other Apps:
 * Dash
 * Spectacle
 * Skype
-* Spider Oak (fuck Dropbox for hiring Condoleeza Rice. Seriously, anyone without the war in Iraq and warrantless wiretapping on their resume would have been better.)
 * Tor 
 * OnionShare 
 * Android Studio
@@ -186,4 +194,5 @@ brew install mongodb
 * Mou
 * Twitter
 * Libre Office
-* 
+* Slack
+* Sip
