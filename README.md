@@ -76,8 +76,8 @@ gem install rails # you might have to chown or adjust path so you don't have to 
 rbenv rehash
 ````
 
-#####Check thyself before you wreck thyself:
-```` ruby -v ```` should give you 2.1.3 and ````rails --version```` should output 4.1.6
+#####Check thyself before thou wreckest thyself:
+```` ruby -v ```` should give you 2.2.3 and ````rails --version```` should output 4.2.4
 
 
 ###Git and Github
