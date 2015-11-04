@@ -9,7 +9,7 @@
 ### Important: If you are doing this with El Capitain, you need another step: 
 * Restart your laptop and hold cmd+r
 * Go to Utilities > Terminal
-* Execute `csrutil disble`
+* Execute `csrutil disable`
 * Now you can go into hardhat mode on your computer. Without this, anything relating to `root` will be impossible. 
 
 
