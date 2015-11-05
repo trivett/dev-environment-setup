@@ -182,7 +182,7 @@ brew install mongodb
 
 ###Dotfiles:
 * I make my modifications in a fork of the [thoughtbot dot](https://github.com/thoughtbot/dotfiles) in [this repo](https://github.com/trivett/dotfiles)
-* After that, I like to install [oh-my-zsh] for no reason other than the nice themes so I don't have to edit my bash or zsh profiles too much. For some reason I like to change the colors of my terminal and stuff when I'm procrastinating.
+* After that, I like to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [bash-it](https://github.com/Bash-it/bash-it) for no reason other than the nice themes so I don't have to edit my bash or zsh profiles too much. For some reason I like to change the colors of my terminal and stuff when I'm procrastinating.
 
 ###Other Apps:
 * Dash
