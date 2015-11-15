@@ -68,11 +68,16 @@ brew install rbenv ruby-build
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 source ~/.bash_profile
 ````
-
+If you have rvm installed: 
+````
+rvm implode
+gem uninstall rvm
+rm -rf .rvm
+rm -rf .rvmrc
 ````
 rbenv install 2.2.3
 rbenv global 2.2.3
-gem install rails # you might have to chown or adjust path so you don't have to install gems as root
+gem install rails --no-ri --no-rdoc # you might have to chown or adjust path so you don't have to install gems as root
 rbenv rehash
 ````
 
