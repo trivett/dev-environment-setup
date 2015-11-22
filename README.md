@@ -80,8 +80,12 @@ That gets rid of the competing ruby version manager.
 ````
 rbenv install 2.2.3
 rbenv global 2.2.3
-gem install rails --no-ri --no-rdoc # you might have to chown or adjust path so you don't have to install gems as root
 rbenv rehash
+
+gem install rails --no-ri --no-rdoc # you might have to chown or adjust path so you don't have to install gems as root
+
+rbenv rehash
+
 ````
 
 #####Check thyself before thou wreckest thyself:
