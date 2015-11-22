@@ -75,6 +75,9 @@ gem uninstall rvm
 rm -rf .rvm
 rm -rf .rvmrc
 ````
+That gets rid of the competing ruby version manager.
+
+````
 rbenv install 2.2.3
 rbenv global 2.2.3
 gem install rails --no-ri --no-rdoc # you might have to chown or adjust path so you don't have to install gems as root
@@ -82,7 +85,8 @@ rbenv rehash
 ````
 
 #####Check thyself before thou wreckest thyself:
-```` ruby -v ```` should give you 2.2.3 and ````rails --version```` should output 4.2.4
+
+` ruby -v ` should give you 2.2.3 and `rails --version` should output 4.2.4
 
 
 ###Git and Github
