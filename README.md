@@ -60,29 +60,36 @@ brew update
 ### Rbenv, Ruby, and Rails
 Much of this follows some of the instructions on [GoRails](https://gorails.com/setup/osx/10.10-yosemite).
 
-````
-brew install rbenv ruby-build
-````
 
-````
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
-source ~/.bash_profile
-````
 If you have rvm installed: 
 ````
 rvm implode
 gem uninstall rvm
 rm -rf .rvm
 rm -rf .rvmrc
+
 ````
-That gets rid of the competing ruby version manager.
+That gets rid of the competing ruby version manager. You will probably also have to remove references to rvm in your bash / zsh profile / rc. 
+
+
+Rbenv
+
+````
+brew install rbenv ruby-build
+````
+
+
+````
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+source ~/.bash_profile
+````
 
 ````
 rbenv install 2.2.3
 rbenv global 2.2.3
 rbenv rehash
 
-gem install rails --no-ri --no-rdoc # you might have to chown or adjust path so you don't have to install gems as root
+gem install rails --no-ri --no-rdoc 
 
 rbenv rehash
 
@@ -90,7 +97,8 @@ rbenv rehash
 
 #####Check thyself before thou wreckest thyself:
 
-` ruby -v ` should give you 2.2.3 and `rails --version` should output 4.2.4
+* Open a new terminal
+* `ruby -v ` should give you 2.2.3 and `rails --version` should output 4.2.4
 
 
 ###Git and Github
