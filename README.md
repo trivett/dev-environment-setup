@@ -152,21 +152,39 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 ````
 {
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": false,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
+	"copy_with_empty_selection": true,
+	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
+	"folder_exclude_patterns":
+	[
+		"bower_components",
+		"tmp",
+		".git"
+	],
+	"font_face": "Source Code Pro",
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"index_files": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"word_wrap": true,
-	"font_face": "AnonymousPro",
-	"font_size": 13
+	"numix_folder_icons": false,
+	"tab_size": 2,
+	"theme": "Numix Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~",
+	"word_wrap": true
 }
+
 ````
 ###iTerm2:
 * [Download](http://www.iterm2.com/#/section/home)
