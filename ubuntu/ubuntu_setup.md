@@ -30,6 +30,10 @@ sudo apt-get update
 sudo apt-get install adapta-gtk-theme
 ```
 
+I also install the GNOME tweak tool (`sudo apt-get install gnome-tweak-tool`) to
+make the caps lock an extra escape (vim ftw) and choose global dark theme, which
+looks great with Adapta GTK. You can also switch the alt and ctrl keys to make
+it feel more Mac like but I get confused doing that.
 
 
 Papirus
