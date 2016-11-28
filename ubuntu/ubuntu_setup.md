@@ -44,8 +44,6 @@ sudo add-apt-repository ppa:varlesh-l/papirus-pack
 sudo apt-get update && sudo apt-get install papirus-gtk-icon-theme
 ```
 
-
-
 Select them under Theme and Icons respectively in Unity tweak tool
 
 Put the Launcher on the bottom like in Windows and Mac if you like
@@ -64,6 +62,11 @@ sudo apt-get update
 sudo apt-get install variety variety-slideshow
 ```
 
+Dash size
+
+I prefer the Unity dash to not take up the whole screen. Put it in desktop form-factor to make it more like a windows start button.
+
+`gsettings set com.canonical.Unity form-factor Desktop`
 
 
 ## Applications
