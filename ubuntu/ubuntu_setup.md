@@ -85,6 +85,8 @@ You can import my settings from the compiz-settings file in this folder.
 
 Gimp (Software Center app)
 
+Pick ([color picker](http://kryogenix.org/code/pick/))
+
 VLC (Software Center app)
 
 Shutter (Software Center app)
