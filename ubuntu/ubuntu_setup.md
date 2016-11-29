@@ -252,6 +252,13 @@ User preferences
 
 ```
 
+Custom Keybinding for vertically adding cursors
+
+```
+{ "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+{ "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+```
+
 
 
 # Installing ruby and such
