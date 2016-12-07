@@ -84,6 +84,7 @@ Compiz plugins 'sudo apt-get install compiz-plugins'
 You can import my settings from the compiz-settings file in this folder.
 
 Gimp (Software Center app)
+This [theme for Gimp](https://github.com/doctormo/GimpPs) gives you all the photoshop shortcuts and such. Especially if you are on more than one monitor you will absolutely want to enable single window mode in the Window menu options
 
 Pick ([color picker](http://kryogenix.org/code/pick/))
 
