@@ -90,7 +90,7 @@ Pick ([color picker](http://kryogenix.org/code/pick/))
 
 VLC (Software Center app)
 
-Shutter (Software Center app)
+Shutter (Software Center app) (to make a global keyboard shortcut for screen shots choose `Keyboard` from Dash, hit shortcuts, and create a custom shortcut with the commans `shutter -s`. I assign the PrintScr key to that rather than the gnome screenshot)
 
 Spotify (Note that the spotify web player is finicky and the regular Linux desktop client is no longer maintained. [Spotiweb](https://github.com/tomasmcm/SpotiWeb/releases) is your best bet)
 
