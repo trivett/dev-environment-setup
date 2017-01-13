@@ -64,7 +64,7 @@ sudo apt-get install variety variety-slideshow
 
 Dash size
 
-I prefer the Unity dash to not take up the whole screen. Put it in desktop form-factor to make it more like a windows start button.
+I prefer the Unity dash to not take up the whole screen. Put it in desktop form-factor to make it more like a windows start button. I also disable the background blur (in unity tweak tool > search) since it causes an unnecessary delay.
 
 `gsettings set com.canonical.Unity form-factor Desktop`
 
