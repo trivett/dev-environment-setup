@@ -253,11 +253,19 @@ User preferences
 
 ```
 
-Custom Keybinding for vertically adding cursors
+Custom Keybinding for vertically adding cursors and `console.log` snippet
 
 ```
 { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
 { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+{ "keys": ["super+shift+l"],
+  "command": "insert_snippet",
+   "args": {
+     "contents": "console.log(${1:}$SELECTION);${0}"
+    }
+}
+
 ```
 
 
