@@ -202,6 +202,16 @@ Keybindings:
       "key": "cmd+shift+d",
       "command": "editor.action.copyLinesDownAction",
       "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+pageup",
+      "command": "workbench.action.nextEditor",
+      "when": "editorTextFocus"
+    },
+   {
+      "key": "ctrl+pagedown",
+      "command": "workbench.action.previousEditor",
+      "when": "editorTextFocus"
     }
 ]
 
