@@ -204,12 +204,12 @@ Keybindings:
       "when": "editorTextFocus"
     },
     {
-      "key": "ctrl+pageup",
+      "key": "ctrl+pagedown",
       "command": "workbench.action.nextEditor",
       "when": "editorTextFocus"
     },
    {
-      "key": "ctrl+pagedown",
+      "key": "ctrl+pageup",
       "command": "workbench.action.previousEditor",
       "when": "editorTextFocus"
     }
