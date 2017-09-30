@@ -127,6 +127,16 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 ````ssh -T git@github.com```` checks that this actually worked.
 
+### Heroku
+
+If you plan on deploying to Heroku first install the heroku CLI with `brew install heroku/brew/heroku`
+
+You will need to log in with your credentials with `heroku login`
+
+If you have more than one set of creds, you can set up a personal and work account with the [heroku-accounts](https://github.com/heroku/heroku-accounts) plugin.
+
+I highly recommend the [parity](https://github.com/thoughtbot/parity) gem, which simplifies the work of dealing with staging and production environments on Heroku, provides an easier to type interface, makes it next to impossible to nuke production, and makes it really easy to sync databases between prod, dev, and staging.
+
 ### Postgresql
 ````
 brew install postgresql
