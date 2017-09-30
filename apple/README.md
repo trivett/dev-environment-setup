@@ -9,7 +9,6 @@
 ### Xcode:
 * Unless you plan on doing iOS or native Mac coding, you don't need xcode. Just run `code-select —install` to get GCC, git and other goodies.
 
-
 ### System preferences:
 
 * *Dock*: Shrink the dock. 
@@ -33,7 +32,6 @@ In a Terminal window, enter:
 This will hide Apple's perplexingly awful default programs that are inadvisable to delete outright.
 
 I also deleted the stock alerts in the notifications panel.
-
 
 ### Dotfiles:
 * I make my modifications in a fork of the [thoughtbot dot](https://github.com/thoughtbot/dotfiles) in [this repo](https://github.com/trivett/dotfiles)
@@ -66,13 +64,11 @@ rm -rf .rvmrc
 ````
 That gets rid of the competing ruby version manager. You will probably also have to remove references to rvm in your bash / zsh profile / rc. 
 
-
 Rbenv
 
 ````
 brew install rbenv ruby-build
 ````
-
 
 ````
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
@@ -137,10 +133,7 @@ brew install postgresql
 ln -sfv /usr/local/opt/postgresql/*plist ~/Library/LaunchAgents
 
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-
-
 ````
-
 
 ### VS Code
 * [Download](https://code.visualstudio.com/)
@@ -215,7 +208,6 @@ Keybindings:
 
 Extensions for VS Code:
 
-
 * Eagle oceanic next
 * Beautify
 * docker
@@ -255,7 +247,6 @@ Suggested Extensions:
 brew install python
 pip install virtualenv
 `````
-
 
 ### Other Apps:
 * Caffeine
