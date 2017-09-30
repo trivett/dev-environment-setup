@@ -1,28 +1,37 @@
 # Setting up a good development environment on a Mac
 
-### Install OSX
-* Always best to clean install and transfer documents and stuff later imho.
-* Pop in your bootable OSX USB stick.
-* Wipe your hard drive by powering on your Mac while holding down the Option key, select the OSX USB drive, go to Utilities > Disk Utility, and format your hard disk in Mac OSX (Journaled) format.
-* Don't sign in with your Apple ID right away.
+## Install OSX
+Always best to clean install and transfer documents and stuff later imho.
 
-### Xcode:
-* Unless you plan on doing iOS or native Mac coding, you don't need xcode. Just run `code-select —install` to get GCC, git and other goodies.
+Pop in your bootable OSX USB stick.
 
-### System preferences:
+Wipe your hard drive by powering on your Mac while holding down the Option key, select the OSX USB drive, go to Utilities > Disk Utility, and format your hard disk in Mac OSX (Journaled) format.
 
-* *Dock*: Shrink the dock. 
-* *Mission Control*: Set up hot corners for mission control and show desktop.
-* *Displays*: Arrangement-> uncheck mirror displays, arrange second monitor to your liking. 
-* *Trackpad*: Tap to click, X scroll direction, X swipe between pages 
-* *Keyboard*: Max speed Key Repeat and shortest Delay Until Repeat so you don't have to wait ages to move your cursor in the terminal. Under the Text tab here you can add keyboard shortcuts like  `¯\_(ツ)_/¯` which come in handy, amirite? Also set up your external pc keyboard and switch alt and cmd, and map the caps lock to an extra escape. 
-* In the finder go to Preferences and change the sidebar so to include the directories such as `~` so you can easily get to them.
+Don't sign in with your Apple ID right away.
 
-### Fix (some) Privacy Intrusions
+## Xcode:
+Unless you plan on doing iOS or native Mac coding, you don't need xcode. Just run `code-select —install` to get GCC, git and other goodies.
+
+## System preferences:
+
+Dock*: Shrink the dock. 
+
+*Mission Control*: Set up hot corners for mission control and show desktop.
+
+*Displays*: Arrangement-> uncheck mirror displays, arrange second monitor to your liking. 
+
+*Trackpad*: Tap to click, X scroll direction, X swipe between pages 
+
+*Keyboard*: Max speed Key Repeat and shortest Delay Until Repeat so you don't have to wait ages to move your cursor in the terminal. Under the Text tab here you can add keyboard shortcuts like  `¯\_(ツ)_/¯` which come in handy, amirite? Also set up your external pc keyboard and switch alt and cmd, and map the caps lock to an extra escape. 
+
+In the finder go to Preferences and change the sidebar so to include the directories such as `~` so you can easily get to them.
+
+## Fix (some) Privacy Intrusions
 Apple is just going to send your data to Microsoft of all places if you don't do this.
-* Follow the instructions at [Fix Mac OSX](https://fix-macosx.com) You can even do this automatically by running a Python script, but we aren't ready for that yet.
 
-### Get Rid of Apple's stupid shit programs
+Follow the instructions at [Fix Mac OSX](https://fix-macosx.com). 
+
+## Get Rid of Apple's stupid shit programs
 In a Terminal window, enter: 
 
 ````sudo chflags hidden /Applications/Bullshit.app````
@@ -33,30 +42,37 @@ This will hide Apple's perplexingly awful default programs that are inadvisable 
 
 I also deleted the stock alerts in the notifications panel.
 
-### Dotfiles:
-* I make my modifications in a fork of the [thoughtbot dot](https://github.com/thoughtbot/dotfiles) in [this repo](https://github.com/trivett/dotfiles)
-* After that, I like to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [bash-it](https://github.com/Bash-it/bash-it) for no reason other than the nice themes so I don't have to edit my bash or zsh profiles too much. For some reason I like to change the colors of my terminal and stuff when I'm procrastinating. I usually go for Agnoster as my 
+## Dotfiles:
+I make my modifications in a fork of the [thoughtbot dot](https://github.com/thoughtbot/dotfiles) in [this repo](https://github.com/trivett/dotfiles)
 
-### Dev friendly fonts
+After that, I like to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). I usually go for Agnoster as my theme.
+
+## Dev friendly fonts
 
 Install Powerline Fonts: https://github.com/powerline/fonts
 
-### Homebrew
-````
+## Homebrew
+
+In the default Mac terminal for now:
+
+````shell
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 ````
 
-* Homebrew will ask you to download Xcode command line tools. When finished, run: 
+Homebrew will ask you to download Xcode command line tools if you haven't already. When finished, run: 
 
-````
+````shell
 brew doctor
 brew update
 ````
+
+## Programming languages
+
 ### Rbenv, Ruby, and Rails
 
 If you have rvm installed: 
-````
+
+````shell
 rvm implode
 gem uninstall rvm
 rm -rf .rvm
@@ -64,18 +80,18 @@ rm -rf .rvmrc
 ````
 That gets rid of the competing ruby version manager. You will probably also have to remove references to rvm in your bash / zsh profile / rc. 
 
-Rbenv
+Install rbenv and ruby-build:
 
-````
+````shell
 brew install rbenv ruby-build
 ````
 
-````
+````shell
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
 source ~/.zshrc
 ````
 
-````
+````shell
 rbenv install 2.4.1
 rbenv global 2.4.1
 rbenv rehash
@@ -83,57 +99,51 @@ rbenv rehash
 gem install rails --no-ri --no-rdoc 
 
 rbenv rehash
-
 ````
 
-#####Check thyself before thou wreckest thyself:
+Check ruby installation in a new terminal window. `ruby -v ` should give you 2.4.1 and `rails --version` should output 5.x.x.
 
-* Open a new terminal
-* `ruby -v ` should give you 2.4.1 and `rails --version` should output 5.x.x
-
-
-## Node
+### Node
 
 Install [nvm](https://github.com/creationix/nvm):
 `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash`
 
 Then you should have the right version of node and npm
 
-## Golang
+### Golang
 
 Download from the official golang site: [https://golang.org/dl/](https://golang.org/dl/)
 
-### Python, pip and virtualenv
+### Python
 
-`````
+`````shell
 brew install python3
 `````
 
+## Git and Github
+Git config:
 
-### Git and Github
-* Git config:
-
-````
+````shell
 git config --global color.ui true
 git config --global user.name "First Last"
 git config --global user.email "flast@yo.com"
 ````
 Set up 2-factor authentication on github.
 
-### Generate SSH keys:
-* In Terminal:
+## Generate SSH keys:
+In Terminal:
 
-````
+````Shell
 mkdir ~/.ssh && cd ~/.ssh
-ssh-keygen -t rsa -C "you@yo.com"
+ssh-keygen -t rsa -C "you@example.com"
 #don't enter a passphrase
 pbcopy < ~/.ssh/id_rsa.pub
 ````
-* Paste the entire resulting RSA key to [Github](https://github.com/settings/ssh).
+Paste the entire resulting RSA key to [Github](https://github.com/settings/ssh).
 
 ````ssh -T git@github.com```` checks that this actually worked.
 
-### Heroku
+## Heroku
 
 If you plan on deploying to Heroku first install the heroku CLI with `brew install heroku/brew/heroku`
 
@@ -143,21 +153,19 @@ If you have more than one set of creds, you can set up a personal and work accou
 
 I highly recommend the [parity](https://github.com/thoughtbot/parity) gem, which simplifies the work of dealing with staging and production environments on Heroku, provides an easier to type interface, makes it next to impossible to nuke production, and makes it really easy to sync databases between prod, dev, and staging.
 
-### Postgresql
-````
+## Postgresql
+````Shell
 brew install postgresql
 ln -sfv /usr/local/opt/postgresql/*plist ~/Library/LaunchAgents
-
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ````
 
-### VS Code
-* [Download](https://code.visualstudio.com/)
+## VS Code
+Download](https://code.visualstudio.com/)
 
+Some settings to get you started:
 
-* Some settings to get you started:
-
-````
+````json
 // Place your settings in this file to overwrite the default settings
 {
     "editor.fontFamily": "Hack, Fira Mono for Powerline,Menlo, Monaco, 'Courier New', monospace",
@@ -186,12 +194,11 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 }
 
 }
-
 ````
 
 Keybindings: 
 
-```
+```json
 [
   {
      "key": "ctrl+shift+up",
@@ -219,10 +226,9 @@ Keybindings:
       "when": "editorTextFocus"
     }
 ]
-
 ```
 
-Extensions for VS Code:
+### Extensions for VS Code:
 
 * Eagle oceanic next
 * Beautify
@@ -239,15 +245,18 @@ Extensions for VS Code:
 * python
 * vscode-icons
 
-### iTerm2:
-* [Download](http://www.iterm2.com/#/section/home)
-* I highly recommend a [heads-up terminal](http://totalterminal.binaryage.com/) for running servers and some color schemes such as [solarized](http://iterm2colorschemes.com/)
-* On iTerm, turn off the annoying beep: Preferences>Profiles>Tab:Terminal>Notifications>Silence Bell
-* Also nice to enable [option + arrow key navigation](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
-* You can use the `.plist` file in this directory to import settings.
+## iTerm2:
+[Download](http://www.iterm2.com/#/section/home)
 
+I highly recommend a [heads-up terminal](http://totalterminal.binaryage.com/) for running servers and some color schemes such as [solarized](http://iterm2colorschemes.com/)
 
-### Chrome:
+On iTerm, turn off the annoying beep: Preferences>Profiles>Tab:Terminal>Notifications>Silence Bell
+
+Also nice to enable [option + arrow key navigation](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
+
+You can use the `.plist` file in this directory to import settings.
+
+## Chrome:
 Set up gmail, drive, and 2-factor authentication
 Suggested Extensions:
 
@@ -256,8 +265,23 @@ Suggested Extensions:
 * Ghostery
 * Rails Panel
 * Postman Rest Client
+* Form Filler
+* GMT/UTC Clock
+* Google Keep
+* HTTPS Everywhere
+* OneTab
+* Papier
+* Save to Pocket
+* Privacy Badger
+* React Developer Tools
+* Redux Dev Tools
+* Rikaikun
+* Track Me Not
+* uBlock Origin
+* Wappalyzer
 
-### Other Apps:
+## Other Apps:
+
 * Caffeine
 * Dash
 * Deco
@@ -293,7 +317,6 @@ Suggested Extensions:
 * Typora
 * Virtualbox
 * Visual Studio Code
-* Whale (trello client)
+* Trello
 * Xcode
 * VLC
-* WebStorm
