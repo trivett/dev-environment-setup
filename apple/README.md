@@ -108,7 +108,7 @@ Check ruby installation in a new terminal window. `ruby -v ` should give you 2.4
 Install [nvm](https://github.com/creationix/nvm):
 `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash`
 
-Then you should have the right version of node and npm
+Then you should have the latest version of node and npm
 
 ### Golang
 
