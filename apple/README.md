@@ -263,7 +263,7 @@ pip install virtualenv
 * Deco
 * Docker
 * Dr Cleaner
-* Encryptr
+* Enpass
 * Firefox
 * Flux
 * Franz
