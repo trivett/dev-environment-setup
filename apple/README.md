@@ -103,6 +103,12 @@ Then you should have the right version of node and npm
 
 Download from the official golang site: [https://golang.org/dl/](https://golang.org/dl/)
 
+### Python, pip and virtualenv
+
+`````
+brew install python3
+`````
+
 
 ### Git and Github
 * Git config:
@@ -250,13 +256,6 @@ Suggested Extensions:
 * Ghostery
 * Rails Panel
 * Postman Rest Client
-
-### Python, pip and virtualenv
-
-`````
-brew install python
-pip install virtualenv
-`````
 
 ### Other Apps:
 * Caffeine
