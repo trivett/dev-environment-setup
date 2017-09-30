@@ -6,17 +6,8 @@
 * Wipe your hard drive by powering on your Mac while holding down the Option key, select the OSX USB drive, go to Utilities > Disk Utility, and format your hard disk in Mac OSX (Journaled) format.
 * Don't sign in with your Apple ID right away.
 
-### Important: If you are doing this with El Capitain, you need another step: 
-* Restart your laptop and hold cmd+r
-* Go to Utilities > Terminal
-* Execute `csrutil disable`
-* Now you can go into hardhat mode on your computer. Without this, anything relating to `root` will be impossible. 
-
-
 ### Xcode:
-* Install all updates for your OS etc.
-* Get Xcode's command line tools to get GCC, git and other goodies.
-* Once it downloads do ````xcode-select --install```` to get the command line tools.
+* Unless you plan on doing iOS or native Mac coding, you don't need xcode. Just run `code-select —install` to get GCC, git and other goodies.
 
 
 ### System preferences:
@@ -26,6 +17,7 @@
 * *Displays*: Arrangement-> uncheck mirror displays, arrange second monitor to your liking. 
 * *Trackpad*: Tap to click, X scroll direction, X swipe between pages 
 * *Keyboard*: Max speed Key Repeat and shortest Delay Until Repeat so you don't have to wait ages to move your cursor in the terminal. Under the Text tab here you can add keyboard shortcuts like  `¯\_(ツ)_/¯` which come in handy, amirite? Also set up your external pc keyboard and switch alt and cmd, and map the caps lock to an extra escape. 
+* In the finder go to Preferences and change the sidebar so to include the directories such as `~` so you can easily get to them.
 
 ### Fix (some) Privacy Intrusions
 Apple is just going to send your data to Microsoft of all places if you don't do this.
@@ -111,6 +103,10 @@ Install [nvm](https://github.com/creationix/nvm):
 
 Then you should have the right version of node and npm
 
+## Golang
+
+Download from the official golang site: [https://golang.org/dl/](https://golang.org/dl/)
+
 
 ### Git and Github
 * Git config:
@@ -126,7 +122,7 @@ Set up 2-factor authentication on github.
 * In Terminal:
 
 ````
-cd ~/.ssh
+mkdir ~/.ssh && cd ~/.ssh
 ssh-keygen -t rsa -C "you@yo.com"
 #don't enter a passphrase
 pbcopy < ~/.ssh/id_rsa.pub
@@ -240,6 +236,7 @@ Extensions for VS Code:
 * I highly recommend a [heads-up terminal](http://totalterminal.binaryage.com/) for running servers and some color schemes such as [solarized](http://iterm2colorschemes.com/)
 * On iTerm, turn off the annoying beep: Preferences>Profiles>Tab:Terminal>Notifications>Silence Bell
 * Also nice to enable [option + arrow key navigation](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
+* You can use the `.plist` file in this directory to import settings.
 
 
 ### Chrome:
@@ -279,7 +276,9 @@ pip install virtualenv
 * Keynote
 * Kindle
 * Libre Office
+* Mailplane
 * Pocket
+* [Pocketcasts](https://github.com/mortenjust/PocketCastsOSX)
 * Postman
 * Private Internet Access
 * Psequel
@@ -289,6 +288,7 @@ pip install virtualenv
 * Skype
 * Spectacle
 * Spotify
+* Table Plus
 * Tor
 * Typora
 * Virtualbox
