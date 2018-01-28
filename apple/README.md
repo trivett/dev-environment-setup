@@ -320,3 +320,4 @@ Suggested Extensions:
 * Trello
 * Xcode
 * VLC
+* [Epson film scanner software](https://epson.com/Support/Scanners/Perfection-Series/Epson-Perfection-V300-Photo/s/SPT_B11B193081)
