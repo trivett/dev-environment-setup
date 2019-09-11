@@ -166,34 +166,78 @@ Download](https://code.visualstudio.com/)
 Some settings to get you started:
 
 ````json
-// Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Hack, Fira Mono for Powerline,Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 15,
-    "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "workbench.colorTheme": "Eagle Oceanic Next",
-    "editor.wordWrap": "on",
-    "window.zoomLevel": 0,
-    "editor.renderIndentGuides": false,
-    "editor.showFoldingControls": "always",
-    "workbench.colorCustomizations": {
-        "editorGutter.background": "#343D46"
+  "prettier.ignorePath": ".eslintignore",
+  "editor.fontSize": 16,
+  "files.autoSaveDelay": 5000,
+  "editor.fontFamily": "Cousine for Powerline, Anonymous Pro for Powerline",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "workbench.editor.enablePreview": false,
+  "window.zoomLevel": 0,
+  "editor.renderIndentGuides": false,
+  "editor.showFoldingControls": "always",
+  "workbench.colorCustomizations": {
+  
+      "terminal.foreground": "#839496",
+      "terminal.background": "#002833",
+      "terminal.ansiBlack": "#003541",
+      "terminal.ansiBlue": "#268bd2",
+      "terminal.ansiCyan": "#2aa198",
+      "terminal.ansiGreen": "#859901",
+      "terminal.ansiMagenta": "#d33682",
+      "terminal.ansiRed": "#dc322f",
+      "terminal.ansiWhite": "#eee8d5",
+      "terminal.ansiYellow": "#b58901",
+      "terminal.ansiBrightBlack": "#586e75",
+      "terminal.ansiBrightBlue": "#839496",
+      "terminal.ansiBrightCyan": "#93a1a1",
+      "terminal.ansiBrightGreen": "#586e75",
+      "terminal.ansiBrightMagenta": "#6c6ec6",
+      "terminal.ansiBrightRed": "#cb4b16",
+      "terminal.ansiBrightWhite": "#fdf6e3",
+      "terminal.ansiBrightYellow": "#657b83",
+      "terminalCursor.foreground": "#839496",
+      "terminalCursor.background": "#003541"
+  
+      // "editorGutter.background": "#eee8d5" //light
     },
+    "editorGutter.background": "#343D46", //dark
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/tmp": true,
+    "**/.DS_Store": true
+  },
+"files.defaultLanguage": "javascript",
+"terminal.integrated.rendererType": "dom",
+"editor.minimap.enabled": false,
+"editor.minimap.maxColumn": 80,
+"java.configuration.checkProjectSettingsExclusions": false,
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"workbench.startupEditor": "newUntitledFile",
 
-    "workbench.iconTheme": "material-theme-icons",
-   "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/tmp": true,
-        "**/.DS_Store": true
-    },   
+"workbench.colorTheme": "Eagle Oceanic Next",
+// "workbench.colorTheme": "Glance (rainglow)",
+"[typescript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[json]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"editor.fontLigatures": true,
+"[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
 
 }
 
-}
 ````
 
 Keybindings: 
