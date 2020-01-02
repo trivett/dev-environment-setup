@@ -163,6 +163,8 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ## VS Code
 Download](https://code.visualstudio.com/)
 
+I highly recommend [this extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) for syncing your vs code setup. My preference backups are [here](https://gist.github.com/trivett/a5b424b610c607965b3a1407568b1a1b)
+
 Some settings to get you started:
 
 ````json
