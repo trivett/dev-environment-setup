@@ -170,7 +170,7 @@ Some settings to get you started:
   "prettier.ignorePath": ".eslintignore",
   "editor.fontSize": 16,
   "files.autoSaveDelay": 5000,
-  "editor.fontFamily": "Cousine for Powerline, Anonymous Pro for Powerline",
+  "editor.fontFamily": "Cascadia Mono PL, Hack, Fira Code",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "workbench.editor.enablePreview": false,
@@ -178,6 +178,8 @@ Some settings to get you started:
   "editor.renderIndentGuides": false,
   "editor.showFoldingControls": "always",
   "workbench.colorCustomizations": {
+      "editorGutter.background": "#343D46", //dark
+      // "editorGutter.background": "#eee8d5" //light
   
       "terminal.foreground": "#839496",
       "terminal.background": "#002833",
@@ -199,10 +201,8 @@ Some settings to get you started:
       "terminal.ansiBrightYellow": "#657b83",
       "terminalCursor.foreground": "#839496",
       "terminalCursor.background": "#003541"
-  
-      // "editorGutter.background": "#eee8d5" //light
     },
-    "editorGutter.background": "#343D46", //dark
+    
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -211,32 +211,37 @@ Some settings to get you started:
     "**/tmp": true,
     "**/.DS_Store": true
   },
-"files.defaultLanguage": "javascript",
-"terminal.integrated.rendererType": "dom",
-"editor.minimap.enabled": false,
-"editor.minimap.maxColumn": 80,
-"java.configuration.checkProjectSettingsExclusions": false,
-"editor.suggestSelection": "first",
-"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-"workbench.startupEditor": "newUntitledFile",
+  "files.defaultLanguage": "javascript",
+  "terminal.integrated.rendererType": "dom",
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 80,
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.startupEditor": "newUntitledFile",
 
-"workbench.colorTheme": "Eagle Oceanic Next",
+  "workbench.colorTheme": "Eagle Oceanic Next",
 // "workbench.colorTheme": "Glance (rainglow)",
-"[typescript]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[json]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[javascript]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"editor.fontLigatures": true,
-"[html]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "debug.node.autoAttach": "on",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.tsserver.trace": "verbose",
 
 }
+
 
 ````
 
@@ -245,31 +250,44 @@ Keybindings:
 ```json
 [
   {
-     "key": "ctrl+shift+up",
-     "command": "editor.action.moveLinesUpAction",
-     "when": "editorTextFocus"
-   },
-   {
-     "key": "ctrl+shift+down",
-     "command": "editor.action.moveLinesDownAction",
-     "when": "editorTextFocus"
-   },
-   {
-      "key": "cmd+shift+d",
-      "command": "editor.action.copyLinesDownAction",
-      "when": "editorTextFocus"
-    },
-    {
-      "key": "ctrl+pagedown",
-      "command": "workbench.action.nextEditor",
-      "when": "editorTextFocus"
-    },
-   {
-      "key": "ctrl+pageup",
-      "command": "workbench.action.previousEditor",
-      "when": "editorTextFocus"
-    }
+    "key": "ctrl+shift+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+2",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "-workbench.action.splitEditor"
+  },
+  {
+    "key": "alt+cmd+1",
+    "command": "workbench.action.editorLayoutSingle"
+  }
 ]
+
 ```
 
 ### Extensions for VS Code:
