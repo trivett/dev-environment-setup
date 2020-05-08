@@ -45,28 +45,10 @@ I also deleted the stock alerts in the notifications panel.
 ## Dotfiles:
 I make my modifications in a fork of the [thoughtbot dot](https://github.com/thoughtbot/dotfiles) in [this repo](https://github.com/trivett/dotfiles)
 
-## Prompt
-I like this [starship](https://starship.rs/config/) project to make it way easier to customize your prompt. Configs:
-
-```
- ~/.config/starship.toml
-[package]
-disabled = true
-
-[aws]
-displayed_items = "profile"
-
-[java]
-disabled = true
-
-[nodejs]
-disabled = true
-
-[time]
-disabled = false
-```
-
+## Shell and prompt
 After that, I like to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). I usually go for Agnoster as my theme.
+I used to use [starship](https://starship.rs/config/) to customize the prompt, but nowadays I am loving [p10k](https://github.com/romkatv/powerlevel10k). Just follow the instructions by running `p10k configure` after installing and customize to your heart's content!
+
 
 ## Dev friendly fonts
 
